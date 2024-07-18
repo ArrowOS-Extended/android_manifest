@@ -1197,7 +1197,7 @@
   <!-- END open-source projects -->
 
   <!-- ArrowOS changes -->
-  <include name="remove.xml" />
-  <include name="arrow.xml" />
+  <include name="snippets/remove.xml" />
+  <include name="snippets/arrow.xml" />
 
 </manifest>
