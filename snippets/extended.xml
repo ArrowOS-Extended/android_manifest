@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="extended"
+        fetch="https://github.com/ArrowOS-Extended"
+        revision="arrow-13.1" />
+
+  <remote name="arrow-gitea"
+        fetch="https://gitea.com/ArrowOS-Extended"
+        revision="arrow-13.1" />
+
+  <!-- bootable repos -->
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="extended" />
+
+  <!-- build repos -->
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="extended" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- device repos -->
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="extended" />
+
+  <!-- framework repos -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="extended" />
+
+  <!-- hardware repos -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="extended" />
+  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="extended" />
+
+  <!-- manifest -->
+  <project path="manifest" name="android_manifest" remote="extended" />
+
+  <!-- packages repos -->
+  <project path="packages/apps/ArrowPrebuilts" name="android_packages_apps_ArrowPrebuilts" remote="extended" clone-depth="1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="extended" />
+
+  <!-- vendor repos -->
+  <project path="vendor/arrow" name="android_vendor_arrow" remote="extended" />
+  <project path="vendor/arrow-priv" name="vendor_arrow-priv" remote="arrow-gitea" />
+
+</manifest>

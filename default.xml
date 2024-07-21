@@ -1199,5 +1199,6 @@
   <!-- ArrowOS changes -->
   <include name="snippets/remove.xml" />
   <include name="snippets/arrow.xml" />
+  <include name="snippets/extended.xml" />
 
 </manifest>
