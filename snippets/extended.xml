@@ -13,6 +13,14 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="extended" />
 
   <!-- build repos -->
+  <project path="build/make" name="android_build" groups="pdk" remote="extended" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="extended" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -22,7 +30,9 @@
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="extended" />
 
   <!-- framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="extended" />
   <project path="frameworks/base" name="android_frameworks_base" remote="extended" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="extended" />
 
   <!-- hardware repos -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="extended" />
@@ -34,6 +44,10 @@
   <!-- packages repos -->
   <project path="packages/apps/ArrowPrebuilts" name="android_packages_apps_ArrowPrebuilts" remote="extended" clone-depth="1" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="extended" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="extended" />
+
+  <!-- system repos -->
+  <project path="system/core" name="android_system_core" remote="extended" />
 
   <!-- vendor repos -->
   <project path="vendor/arrow" name="android_vendor_arrow" remote="extended" />
