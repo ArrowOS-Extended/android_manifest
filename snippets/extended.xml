@@ -27,7 +27,11 @@
   </project>
 
   <!-- device repos -->
+  <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="extended" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="extended" />
+
+  <!-- external repos -->
+  <project path="external/bson" name="android_external_bson" remote="extended" />
 
   <!-- framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="extended" />
@@ -36,6 +40,7 @@
 
   <!-- hardware repos -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="extended" />
+  <project path="hardware/motorola" name="android_hardware_motorola" remote="extended" />
   <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="extended" />
 
   <!-- manifest -->
@@ -43,11 +48,15 @@
 
   <!-- packages repos -->
   <project path="packages/apps/ArrowPrebuilts" name="android_packages_apps_ArrowPrebuilts" remote="extended" clone-depth="1" />
+  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="extended" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="extended" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="extended" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="extended" />
 
   <!-- system repos -->
   <project path="system/core" name="android_system_core" remote="extended" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="extended" />
+  <project path="system/qcom" name="android_system_qcom" remote="extended" />
 
   <!-- vendor repos -->
   <project path="vendor/arrow" name="android_vendor_arrow" remote="extended" />
