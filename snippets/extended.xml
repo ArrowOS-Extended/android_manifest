@@ -28,6 +28,7 @@
 
   <!-- device repos -->
   <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="extended" />
+  <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="extended" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="extended" />
 
   <!-- external repos -->
@@ -41,6 +42,7 @@
   <!-- hardware repos -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="extended" />
   <project path="hardware/motorola" name="android_hardware_motorola" remote="extended" />
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="extended" />
   <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="extended" />
 
   <!-- manifest -->
