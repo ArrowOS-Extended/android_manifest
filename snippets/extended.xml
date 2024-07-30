@@ -51,6 +51,7 @@
   <!-- packages repos -->
   <project path="packages/apps/ArrowPrebuilts" name="android_packages_apps_ArrowPrebuilts" remote="extended" clone-depth="1" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="extended" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="extended" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="extended" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="extended" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="extended" />
