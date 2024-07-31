@@ -49,6 +49,8 @@ m bacon
 
 [Changelog Monthly](https://github.com/ArrowOS-Extended/arrow_extended_changelog)
 
+[Updates Channel](https://t.me/arrowextended)
+
 ---------------------------------------------------------------------------------------------------------------------
 
 [ArrowOS Website](https://www.arrowos.net) | [ArrowOS Blog](https://blog.arrowos.net)
