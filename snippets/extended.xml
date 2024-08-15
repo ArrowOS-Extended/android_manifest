@@ -29,6 +29,7 @@
   <!-- device repos -->
   <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="extended" />
   <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="extended" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="extended" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="extended" />
 
   <!-- external repos -->
