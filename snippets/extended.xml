@@ -57,6 +57,7 @@
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="extended" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="extended" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="extended" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extended" />
 
   <!-- system repos -->
   <project path="system/core" name="android_system_core" remote="extended" />
