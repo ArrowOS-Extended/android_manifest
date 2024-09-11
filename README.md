@@ -13,7 +13,7 @@ To initialize your local repository, use command:
 repo init -u https://github.com/ArrowOS-Extended/android_manifest.git -b arrow-13.1
 ```
 
-Then sync up:
+Then, sync the sources:
 
 ```bash
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
@@ -21,29 +21,35 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 
 Building the System
 -------------------
- Initialize the ROM environment with the envsetup.sh script.
+First, initialize the ROM environment with the envsetup.sh script:
 
 ```bash
 . build/envsetup.sh
 ```
 
-Lunch your device after cloning all device sources if needed.
+After cloning the necessary device sources, set up the build environment for your device:
 
 ```bash
 lunch arrow_devicecodename-buildtype
 ```
 
-Start compilation
-
-```bash
-m otapackage
-```
-
-OR
-
+### Unsigned Build:
+To build an unsigned ROM:
 ```bash
 m bacon
 ```
+
+### Signed Build:
+If you haven't already generated keys, you can do so with the following command (email is optional; if omitted, your Git configuration email will be used):
+```bash
+gen_keys [email]
+```
+
+Then, proceed with building the signed ROM:
+```bash
+ota_sign
+```
+Or if you already have your keys, clone them to vendor/arrow/signing/keys.
 
 **Changelog:**
 
