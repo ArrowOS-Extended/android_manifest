@@ -7,6 +7,13 @@ Getting Started
 To get started with the ArrowOS sources, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
+For gms and other large repos, make sure git-lfs is installed and initialized:
+
+```bash
+sudo apt install git-lfs
+git-lfs install
+```
+
 To initialize your local repository, use command:
 
 ```bash
