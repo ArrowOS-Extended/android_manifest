@@ -35,6 +35,7 @@
   <!-- external repos -->
   <project path="external/boringssl" name="android_external_boringssl" groups="pdk" remote="extended" />
   <project path="external/bson" name="android_external_bson" remote="extended" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="extended" />
   <project path="external/rust/crates/keybox_parser" name="android_external_rust_keybox-parser" remote="extended" />
 
   <!-- framework repos -->
