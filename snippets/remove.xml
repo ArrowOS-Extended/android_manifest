@@ -3,7 +3,6 @@
 
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
-  <remove-project name="platform/libcore" />
 
   <!-- bootable -->
   <remove-project name="platform/bootable/recovery" />
